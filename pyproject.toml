@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "apex-kernel-mesh"
+version = "0.1.0"
+description = "Zero-runtime-dependency prototype for capability discovery, DAG planning, simulated pipeline execution, and latency-budget allocation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "AAH20" }]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+apex-kernel-mesh = "apex_kernel_mesh.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["apex_kernel_mesh*"]
