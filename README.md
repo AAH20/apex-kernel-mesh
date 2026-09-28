@@ -83,6 +83,10 @@ The benchmark creates a synthetic in-memory registry (8 sample kernels and 24 ca
 
 Use the output as a development smoke benchmark. See [benchmark methodology](docs/benchmarks.md) for what is needed before making performance or cost comparisons. Do not interpret these values as latency guarantees, unit economics, or external-kernel results.
 
+## Data-center operations reference architecture
+
+A proposed Hermes + Muse Spark architecture for workload, power, cooling, network, and reliability planning—including repository promotion, safe control boundaries, solver evaluation, and cost accounting—is documented in [Data Center Operations with Hermes and Muse Spark](docs/datacenter-hermes-muse-architectures.md). The adapters, agents, and benchmark described there are design proposals; they are not implemented in this prototype.
+
 ## Integration direction
 
 The project is structured so adapters could later connect independent solver repositories, MCP servers, or other capability providers. The repositories below are possible integration targets only; they are not currently imported, called, or benchmarked by this codebase.
